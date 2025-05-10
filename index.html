@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SPACED - Space Travel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+  font-family: 'Montserrat', sans-serif;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/e/e1/FullMoon2010.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+      background: rgba(0, 0, 0, 0.7);
+    }
+    header .logo img {
+      height: 40px;
+    }
+    header nav a {
+      color: #fff;
+      margin-left: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 1px;
+      cursor: pointer;
+    }
+    section {
+      padding: 100px 60px;
+      min-height: 100vh;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(to right, #000 50%, transparent 50%),
+        url('https://images.unsplash.com/photo-1580428184412-c8f5e8fffb27?auto=format&fit=crop&w=1400&q=80') no-repeat right center;
+      background-size: cover;
+      background-position: right center;
+    }
+    .hero .text {
+      max-width: 40%;
+    }
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 30px;
+    }
+    .hero button {
+      padding: 15px 30px;
+      border: 1px solid #fff;
+      background: transparent;
+      color: #fff;
+      font-weight: bold;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s;
+    }
+    .hero button:hover {
+      background: #fff;
+      color: #000;
+    }
+    .footer-info {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: #ccc;
+      padding: 20px 60px;
+    }
+    .footer-info div {
+      max-width: 33%;
+    }
+    .vertical-text {
+      writing-mode: vertical-lr;
+      position: absolute;
+      right: 10px;
+      bottom: 100px;
+      font-size: 10px;
+      color: #aaa;
+      letter-spacing: 2px;
+    }
+    #destinations {
+      background-color: #111;
+    }
+    #destinations h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    #destinations ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    #destinations li {
+      margin-bottom: 20px;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+    }
+    #destinations li img {
+      width: 40px;
+      height: 40px;
+      margin-right: 15px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/SpaceX-Logo.svg/512px-SpaceX-Logo.svg.png" alt="SPACED Logo" />
+    </div>
+    <nav>
+      <a href="#">HOME</a>
+      <a href="#destinations">THE DESTINATIONS</a>
+      <a href="#">THE EXPERIENCE</a>
+      <a href="#">ABOUT</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="text">
+      <h1>TO SPACE AND BACK, SAFELY.</h1>
+      <button>BOOK YOUR ADVENTURE</button>
+    </div>
+  </section>
+
+  <section id="destinations">
+    <h2>Popular Destinations</h2>
+    <ul>
+      <li>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/FullMoon2010.jpg" alt="Moon"> 
+        The Moon – Walk where few have walked.
+      </li>
+      <li>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" alt="Mars"> 
+        Mars – The red frontier awaits your footsteps.
+      </li>
+      <li>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/ISS_Structure.jpg" alt="Space Station"> 
+        Space Station – Zero-gravity luxury experience.
+      </li>
+    </ul>
+  </section>
+
+  <div class="footer-info">
+    <div><strong>NEW DESTINATION</strong><br>Announcing that we fly to the moon.</div>
+    <div><strong>NEW DISCOUNT</strong><br>To mars and back for $199, whut?</div>
+    <div><strong>NEW DISCOUNT</strong><br>To mars and back for $199, whut?</div>
+  </div>
+
+  <div class="vertical-text">0055527B-779A-4E50-91DB-E9F356E9B370</div>
+
+  <script>
+    console.log("Welcome to SPACED");
+  </script>
+</body>
+</html>
